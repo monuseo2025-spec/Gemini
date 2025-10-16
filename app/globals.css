@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+
+
+body {
+  font-family: Kraken-Brand "IBM Plex Sans", ;
+}
+
+.PhoneInputInput:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.loader-backdrop{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.349);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top:0;
+  z-index: 9999;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
